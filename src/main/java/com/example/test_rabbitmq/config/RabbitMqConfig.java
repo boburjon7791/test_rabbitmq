@@ -40,6 +40,7 @@ public class RabbitMqConfig {
                 .to(topicExchange())
                 .with(postRoutingKey);
     }
+//    json configurations is not required, if you are going to send only string messages
 //    json configurations
     @Bean
     public Queue jsonPostQueue(){
