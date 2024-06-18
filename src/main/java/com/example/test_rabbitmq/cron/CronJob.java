@@ -16,12 +16,12 @@ public class CronJob {
     private final PostProducer postProducer;
 /*    @Scheduled(cron = "0,10,20,30,40,50 * * * * *")
     public void sendMessage(){
-        System.out.println("cron job is working");
+        System.out.println("Cron job is working");
         postProducer.sendMessage("Hello World from cron job");
     }*/
     @Scheduled(cron = "0,10,20,30,40,50 * * * * *")
     public void sendPost(){
-        System.out.println("cron job is working");
+        System.out.println("Cron job is working");
         postProducer.sendPost(
                 Post.builder()
                 .id(0L)
