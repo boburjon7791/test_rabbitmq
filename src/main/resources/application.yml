@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: test_rabbitmq
+  rabbitmq:
+    host: 127.0.0.1
+    username: guest
+    password: guest
+    port: 5672
+queue:
+  name:
+    post: post_queue
+exchange:
+  name:
+    post: post_exchange
+routing:
+  key:
+    post: post_routing_key
+json:
+  routing:
+    key:
+      post: post_json_routing_key
+  queue:
+    name:
+      post: post_json_queue
